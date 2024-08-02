@@ -72,6 +72,12 @@ h2 {
     gap: 20px;
     padding-bottom: 20px;
     scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.proyecto-slider::-webkit-scrollbar {
+    display: none;
 }
 
 .proyecto {
