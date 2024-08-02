@@ -9,17 +9,11 @@
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <h1>Alejandro</h1>
-            <p>Desarrollador Android</p>
-        </div>
+        <h1>Alejandro</h1>
+        <p>Desarrollador Android</p>
     </header>
 
     <nav>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-label">
-            <span></span>
-        </label>
         <ul>
             <li><a href="#sobre-mi">Sobre mí</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
@@ -29,7 +23,11 @@
     </nav>
 
     <main>
-        <!-- Otras secciones sin cambios -->
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Llevo 4 años trabajando como jardinero, una experiencia que me ha enseñado la importancia de la paciencia, la organización y el trabajo duro. Ahora, he completado mis estudios en Desarrollo de Aplicaciones Multiplataforma (DAM), lo que me ha permitido redirigir mi carrera hacia mi verdadera pasión: la programación. Me interesa especialmente el desarrollo en Android, aunque disfruto de la programación en general y los desafíos que presenta.</p>
+            <p>Mis principales habilidades son mi capacidad para aprender rápidamente y mi organización, lo que me permite abordar problemas complejos de manera eficiente y efectiva. Estoy entusiasmado por comenzar mi carrera en el mundo de la tecnología, donde puedo aplicar mis conocimientos y habilidades para contribuir a proyectos innovadores y seguir creciendo como profesional.</p>
+        </section>
 
         <section id="proyectos">
             <h2>Proyectos</h2>
@@ -43,21 +41,44 @@
                         <a href="#" class="btn playstore"><i class="fab fa-google-play"></i> Google Play</a>
                     </div>
                 </div>
-                <!-- Otros proyectos sin cambios -->
+                <div class="proyecto">
+                    <img src="https://via.placeholder.com/300x200" alt="App de Tareas">
+                    <h3>App de Tareas</h3>
+                    <p>Aplicación de gestión de tareas con arquitectura MVVM, Room para persistencia y Dagger Hilt para inyección de dependencias.</p>
+                    <div class="proyecto-links">
+                        <a href="#" class="btn github"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="btn apk"><i class="fas fa-download"></i> Descargar APK</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="https://via.placeholder.com/300x200" alt="App de Películas">
+                    <h3>App de Películas</h3>
+                    <p>Aplicación de catálogo de películas que utiliza la API de The Movie DB, con paginación y animaciones en Jetpack Compose.</p>
+                    <div class="proyecto-links">
+                        <a href="#" class="btn github"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="btn playstore"><i class="fab fa-google-play"></i> Google Play</a>
+                    </div>
+                </div>
             </div>
-            <div class="slider-arrows">
-                <button class="arrow left"><i class="fas fa-chevron-left"></i></button>
-                <button class="arrow right"><i class="fas fa-chevron-right"></i></button>
-            </div>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Kotlin</li>
+                <li>Jetpack Compose</li>
+                <li>Android SDK</li>
+                <li>MVVM</li>
+                <li>Dagger Hilt</li>
+                <li>Git</li>
+            </ul>
         </section>
 
         <section id="contacto">
             <h2>Contacto</h2>
-            <div class="contact-icons">
-                <a href="mailto:tu.email@ejemplo.com"><i class="fas fa-envelope"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-            </div>
+            <p>Email: tu.email@ejemplo.com</p>
+            <p>LinkedIn: <a href="#">Tu perfil de LinkedIn</a></p>
+            <p>GitHub: <a href="#">Tu perfil de GitHub</a></p>
         </section>
     </main>
 
