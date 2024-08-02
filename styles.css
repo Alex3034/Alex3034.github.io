@@ -105,6 +105,25 @@ h2 {
     margin: 10px;
 }
 
+.pagination {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    margin: 0 5px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(--accent-color);
+}
+
 .btn {
     display: inline-block;
     padding: 8px 16px;
