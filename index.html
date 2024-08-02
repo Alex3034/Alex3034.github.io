@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alejandro - Desarrollador Android</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -24,17 +25,33 @@
     <main>
         <section id="sobre-mi">
             <h2>Sobre mí</h2>
-            <p>Soy un desarrollador Android apasionado por crear aplicaciones intuitivas y eficientes. Graduado en Desarrollo de Aplicaciones Multiplataforma, me especializo en Kotlin y Jetpack Compose.</p>
+            <p>Llevo 4 años trabajando como jardinero, una experiencia que me ha enseñado la importancia de la paciencia, la organización y el trabajo duro. Ahora, he completado mis estudios en Desarrollo de Aplicaciones Multiplataforma (DAM), lo que me ha permitido redirigir mi carrera hacia mi verdadera pasión: la programación. Me interesa especialmente el desarrollo en Android, aunque disfruto de la programación en general y los desafíos que presenta.</p>
+            <p>Mis principales habilidades son mi capacidad para aprender rápidamente y mi organización, lo que me permite abordar problemas complejos de manera eficiente y efectiva. Estoy entusiasmado por comenzar mi carrera en el mundo de la tecnología, donde puedo aplicar mis conocimientos y habilidades para contribuir a proyectos innovadores y seguir creciendo como profesional.</p>
         </section>
 
         <section id="proyectos">
             <h2>Proyectos</h2>
-            <div class="proyecto">
-                <h3>App de Noticias</h3>
-                <p>Una aplicación de noticias que utiliza la API de NewsAPI, implementada con Retrofit y Jetpack Compose.</p>
-                <a href="#">Ver en GitHub</a>
+            <div class="proyecto-slider">
+                <div class="proyecto">
+                    <img src="https://via.placeholder.com/300x200" alt="App de Noticias">
+                    <h3>App de Noticias</h3>
+                    <p>Una aplicación de noticias que utiliza la API de NewsAPI, implementada con Retrofit y Jetpack Compose.</p>
+                    <div class="proyecto-links">
+                        <a href="#" class="btn github"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="btn playstore"><i class="fab fa-google-play"></i> Google Play</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="https://via.placeholder.com/300x200" alt="App de Tareas">
+                    <h3>App de Tareas</h3>
+                    <p>Aplicación de gestión de tareas con arquitectura MVVM, Room para persistencia y Dagger Hilt para inyección de dependencias.</p>
+                    <div class="proyecto-links">
+                        <a href="#" class="btn github"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="btn apk"><i class="fas fa-download"></i> Descargar APK</a>
+                    </div>
+                </div>
+                <!-- Añade más proyectos aquí -->
             </div>
-            <!-- Añade más proyectos aquí -->
         </section>
 
         <section id="habilidades">
@@ -60,7 +77,5 @@
     <footer>
         <p>&copy; 2024 Alejandro. Todos los derechos reservados.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
