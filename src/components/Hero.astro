@@ -1,0 +1,57 @@
+---
+const personalImageAlt = "Alejandro"
+import Badge from "@/components/Badge.astro"
+import LinkedInIcon from "@/components/icons/LinkedIn.astro"
+import MailIcon from "@/components/icons/Mail.astro"
+import SocialPill from "@/components/SocialPill.astro"
+import GitHub from "./icons/GitHub.astro"
+import Briefcase from "./icons/Briefcase.astro"
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="/Alejandro.webp"
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://www.linkedin.com/in/alejandro-herrera-molina/"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hola! soy Alejandro
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800  dark:[&>strong]:text-cyan-400 [&>strong]:text-sky-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+    de Cádiz, España.   <strong
+      >Graduado en Desarrollo de Aplicaciones Multiplataforma. </strong
+    > Especializado en el desarrollo de aplicaciones Android.
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:alex1348wk@gmail.com">
+      <MailIcon class="size-4" />
+      Contáctame
+    </SocialPill>
+    <SocialPill href="https://www.linkedin.com/in/alejandro-herrera-molina/">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+    <SocialPill href="https://github.com/Alex3034">
+      <GitHub class="size-4" />
+      GitHub
+    </SocialPill>
+    <SocialPill href="https://www.linkedin.com/in/alejandro-herrera-molina/">
+      <Briefcase class="size-4" />
+      CV
+    </SocialPill>
+  </nav>
+</div>

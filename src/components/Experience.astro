@@ -1,0 +1,43 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Marzo - Junio 2024",
+    title: "Programador",
+    company: "Fundación MEDAC",
+    description:
+      "Desarrollo e implementación de un instituto virtual. Desde la creación e implementación de menús interactivos hasta la implementación de los controles de los avatares, utilizando C#, Unity, Fusion, etc.",
+  },
+  {
+    date: "2020/24",
+    title: "Jardinero",
+    company: "Autonomo",
+    description:
+      "Responsable del cuidado y mantenimiento de jardines a particulares. Gestión y organización de podas, cortes y revisión de sistemas de riegos. Mantenimiento y limpieza de piscinas. Responsable de adquisición y gestión de materiales necesarios.",
+  },
+  {
+    date: "Abril 2022",
+    title: "Comercial Inmobiliario",
+    company: "Apica Home",
+    description:
+      "Gestión y promoción de propiedades inmobiliarias, atención y asesoramiento a clientes, organización de visitas, negociaciones de ventas y búsqueda de incremento de la cartera de clientes.",
+  },
+  {
+    date: "Marzo - Junio 2019",
+    title: "Técnico Informático",
+    company: "Schulzentrum der Sekundarstufe",
+    description:
+      "Realizado en Bremen, Alemania. Labores de mantenimiento y limpieza de equipos. Actualización de equipos y su correcta instalación. Instalación de equipos especializados para aulas como pizarras dijitales e otros.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
